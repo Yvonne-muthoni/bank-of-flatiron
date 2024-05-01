@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react';
+import React, { useEffect,useState} from 'react';
 import Search from './components/Search';
 import Form from './components/Form';
 import Header from './components/Header';
@@ -7,6 +7,20 @@ import Table from './components/Table';
 function Transactions() {
     const [userTransactions, setTransactions] = useState([]);
     const [filteredTransactions, setFilteredTransactions] = useState([]);
+
+
+    //fetch data
+    useEffect(() => {
+      fetch("https://transactions-api-psi.vercel.app/transactions")
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+        setTransactions(data)
+        setFilteredTransactions(data)
+      })
+    },[])
+
+    //searching transaction by desription
     const handleSearch = (query) => {
       const filtered = userTransactions.filter((transaction) =>
       transaction.description.toLowerCase().includes(query.toLowerCase())

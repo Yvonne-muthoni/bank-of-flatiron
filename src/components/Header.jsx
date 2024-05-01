@@ -2,7 +2,7 @@
     
     return (
         <>
-          <h1 id="heading">The Royal Bank of Flatiron</h1>
+          <h1 id="heading">Royal Bank of Flatiron</h1>
         </>
     )
     }

@@ -10,9 +10,9 @@ const Search = ({onSearch}) => {
     }
 
   return (
-    <div id="search-bar">
+    <div id="search">
         <input 
-          className="search-bar"
+          className="search"
           type="text" 
           placeholder="Search your recent Transaction"
           onChange={search}
