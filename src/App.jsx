@@ -11,7 +11,7 @@ function Transactions() {
 
     //fetch data
     useEffect(() => {
-      fetch("https://transactions-api-psi.vercel.app/transactions")
+      fetch("https://bank-of-flatiron-eta-five.vercel.app/")
       .then(res => res.json())
       .then(data => {
         console.log(data)
