@@ -17,7 +17,7 @@ Installation instruction
 
 
 Live Link
-https://bank-of-flatiron-eta-five.vercel.app/
+https://my-json-server.typicode.com/Yvonne-muthoni/bank-of-flatiron/transactions
 
 Technologies used
 Github
