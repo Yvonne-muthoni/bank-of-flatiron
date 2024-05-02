@@ -11,7 +11,7 @@ function Transactions() {
 
     //fetch data
     useEffect(() => {
-      fetch("https://transactions-api-psi.vercel.app/transactions")
+      fetch("https://my-json-server.typicode.com/Yvonne-muthoni/bank-of-flatiron/transactions")
       .then(res => res.json())
       .then(data => {
         console.log(data)
